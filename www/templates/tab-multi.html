@@ -1,17 +1,19 @@
 <ion-view title="Lista">
 	<ion-content class="has-header padding">
-		<ion-list>
+		<div class="list card">
 			<ion-item ng-repeat="friend in friends" type="item-text-wrap">
-				<div class="card">
-					<div class="item item-text-wrap">
-						<h3>{{friend.name.formatted}}</h3> 
-						<div class="row">
-							<div class="col"><i class="icon ion-phone"></i></div>
-							<div class="col col-75">{{friend.phoneNumbers[0].value}}</div>
-						</div>
+				<div class="item item-text-wrap">
+					<h2 id="nameHeader">{{friend.name.formatted}}</h2> 
+					<div class="row" ng-repeat="phoneNumber in friend.phoneNumbers">
+						<div class="col"><i class="icon ion-ios7-telephone"></i></div>
+						<div class="col col-80" id="phoneNumDiv">{{phoneNumber}}</div>
+					</div>
+					<div class="row" ng-repeat="emailAddress in friend.emails">
+						<div class="col"><i class="icon ion-ios7-email"></i></div>
+						<div class="col col-80" id="phoneNumDiv">{{emailAddress}}</div>
 					</div>
 				</div>
 			</ion-item>
-		<ion-list>
+		</div>
 	</ion-content>
 </ion-view>

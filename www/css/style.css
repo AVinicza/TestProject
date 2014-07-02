@@ -1,1 +1,30 @@
 /* Empty. Add your own CSS if you like */
+
+.item-text-wrap{
+	box-shadow: 5px 5px 5px grey;
+	background-color: #007fff;
+}
+
+#nameHeader{
+	font-size: 30px;
+	color: white;
+	font-weight: bold;
+	font-family: "MS Sans Serif";
+	text-align: center;
+}
+
+#phoneNumDiv{
+	color: white;
+	font-size: 20px;
+	padding: 20px;
+}
+
+i.icon.ion-ios7-telephone{
+  	font-size: 50px;
+  	color: white;
+}
+
+i.icon.ion-ios7-email{
+  	font-size: 50px;
+  	color: white;
+}

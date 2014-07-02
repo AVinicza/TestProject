@@ -1,12 +1,33 @@
 angular.module('starter.controllers', [])
 
 .controller('MultiCtrl', function($scope, Friends) {
-	Friends.exec(function(friends){
-		$scope.friends = friends;
-		if(!$scope.$$phase) {
-			$scope.$apply();
-		}
-	});
+	$scope.friends = [
+		{name:{
+			formatted: "Kiss Sanya"
+		},
+		phoneNumbers: ["061234567", "061234568"],
+		emails: ["sanya@trafipax.hu"]},
+		{name:{
+			formatted: "Gazsi"
+		},
+		phoneNumbers: ["061234567"]},
+		{name:{
+			formatted: "Vég Béla"
+		},
+		phoneNumbers: ["061234567"]},
+		{name:{
+			formatted: "Kiss Sanya"
+		},
+		phoneNumbers: ["061234567"]},
+		{name:{
+			formatted: "Gazsi"
+		},
+		phoneNumbers: ["061234567"]},
+		{name:{
+			formatted: "Vég Béla"
+		},
+		phoneNumbers: ["061234567"]}
+	];
 })
 
 .controller('SingleCtrl', function($scope, Friends) {
