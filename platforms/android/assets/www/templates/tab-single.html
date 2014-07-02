@@ -1,4 +1,14 @@
 <ion-view title="Keresés">
-  <ion-content class="has-header">
-  </ion-content>
+  	<ion-content class="has-header">
+	  	<div class="list">
+		  	<label class="item item-input">
+			    <span class="input-label">Tel.szám</span>
+			    <input type="tel" ng-model="$parent.phoneNum">
+			</label>
+		  	<button class="button button-positive" ng-click="fetchContact()">
+		  		Keresés
+			</button>
+			<h2 class="title">{{name}}</h2>
+		</div>
+  	</ion-content>
 </ion-view>
